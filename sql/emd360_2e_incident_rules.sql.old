@@ -1,0 +1,566 @@
+DEF section_name = 'Incidents';
+SPO &&emd360_main_report..html APP;
+PRO <h2>&&section_name.</h2>
+SPO OFF;
+
+/*DEF title = 'Enabled Rules';
+DEF main_table = 'sysman.EM_RULE_SETS';
+BEGIN
+  :sql_text := '
+SELECT *
+FROM
+  (SELECT RULESET_ID,
+    RULESET_NAME,
+    OWNER,
+    CREATED_BY,
+    DESCRIPTION,
+    RULESET_ORDER,
+    IS_VISIBLE,
+    IS_READONLY,
+    IS_BROKEN,
+    IS_BUSINESS,
+    LAST_UPDATED_BY,
+    last_updated_date,
+    created_date,
+    AllSubscribeUsers,
+    IS_ENABLED
+  FROM
+    (SELECT EmRuleSetsEO.RULESET_ID,
+      EmRuleSetsEO.RULESET_NAME,
+      EmRuleSetsEO.RULESET_NAME_NLSID,
+      EmRuleSetsEO.OWNER,
+      EmRuleSetsEO.CREATED_BY,
+      EmRuleSetsEO.DESCRIPTION,
+      EmRuleSetsEO.DESCRIPTION_NLSID,
+      EmRuleSetsEO.RESOURCE_BUNDLE,
+      EmRuleSetsEO.RULESET_ORDER,
+      EmRuleSetsEO.IS_ENABLED,
+      EmRuleSetsEO.IS_VISIBLE,
+      EmRuleSetsEO.IS_READONLY,
+      EmRuleSetsEO.IS_BROKEN,
+      EmRuleSetsEO.PLUGINID,
+      EmRuleSetsEO.IS_BUSINESS,
+      EmRuleSetsEO.LAST_UPDATED_BY,
+      EmRuleSetsEO.LAST_UPDATED_DATE,
+      EmRuleSetsEO.CREATION_DATE AS CREATED_DATE,
+      EmRuleSetsEO.TARGET_SELECTION_TYPE,
+      EmRuleSetsEO.SOURCE_SELECTION_TYPE,
+      EmRuleSetsEO.RL_EXPRESSION,
+      Emrulesetseo.Ruleset_Guid,
+      Emrulesetseo.PRIV_MODE,
+      rsusrers.all_users AS AllSubscribeUsers
+    FROM SYSMAN.EM_RULE_SETS EmRuleSetsEO
+    LEFT OUTER JOIN
+      (SELECT r.ruleset_id,
+        em_incident_rules.table_to_string(CAST(COLLECT(recipient))) AS all_users
+      FROM sysman.em_rules r,
+        (SELECT acts.rule_id,
+          notif.recipient
+        FROM sysman.em_rule_cond_actions acts,
+          sysman.em_rule_basic_notifications notif
+        WHERE acts.COND_ACTION_ID = notif.COND_ACTION_ID
+        ) rr
+      WHERE r.rule_id = rr.rule_id
+      GROUP BY r.ruleset_id
+      ) rsusrers
+    ON EmRuleSetsEO.ruleset_id   =rsusrers.ruleset_id
+    WHERE EmRuleSetsEO.Is_Visible=1
+    ORDER BY RULESET_ORDER
+    )
+  ) 
+WHERE is_enabled = 1
+';
+END;
+/
+@@emd360_9a_pre_one.sql
+
+DEF title = 'Disabled Rules';
+DEF main_table = 'sysman.EM_RULE_SETS';
+BEGIN
+  :sql_text := '
+SELECT *
+FROM
+  (SELECT  RULESET_ID,
+    RULESET_NAME,
+    OWNER,
+    CREATED_BY,
+    DESCRIPTION,
+    RULESET_ORDER,
+    IS_VISIBLE,
+    IS_READONLY,
+    IS_BROKEN,
+    IS_BUSINESS,
+    LAST_UPDATED_BY,
+    last_updated_date,
+    created_date,
+    AllSubscribeUsers,
+    IS_ENABLED
+  FROM
+    (SELECT EmRuleSetsEO.RULESET_ID,
+      EmRuleSetsEO.RULESET_NAME,
+      EmRuleSetsEO.RULESET_NAME_NLSID,
+      EmRuleSetsEO.OWNER,
+      EmRuleSetsEO.CREATED_BY,
+      EmRuleSetsEO.DESCRIPTION,
+      EmRuleSetsEO.DESCRIPTION_NLSID,
+      EmRuleSetsEO.RESOURCE_BUNDLE,
+      EmRuleSetsEO.RULESET_ORDER,
+      EmRuleSetsEO.IS_ENABLED,
+      EmRuleSetsEO.IS_VISIBLE,
+      EmRuleSetsEO.IS_READONLY,
+      EmRuleSetsEO.IS_BROKEN,
+      EmRuleSetsEO.PLUGINID,
+      EmRuleSetsEO.IS_BUSINESS,
+      EmRuleSetsEO.LAST_UPDATED_BY,
+      EmRuleSetsEO.LAST_UPDATED_DATE,
+      EmRuleSetsEO.CREATION_DATE AS CREATED_DATE,
+      EmRuleSetsEO.TARGET_SELECTION_TYPE,
+      EmRuleSetsEO.SOURCE_SELECTION_TYPE,
+      EmRuleSetsEO.RL_EXPRESSION,
+      Emrulesetseo.Ruleset_Guid,
+      Emrulesetseo.PRIV_MODE,
+      rsusrers.all_users AS AllSubscribeUsers
+    FROM SYSMAN.EM_RULE_SETS EmRuleSetsEO
+    LEFT OUTER JOIN
+      (SELECT r.ruleset_id,
+        em_incident_rules.table_to_string(CAST(COLLECT(recipient) AS SMP_EMD_LONG_STRING_ARRAY)) AS all_users
+      FROM sysman.em_rules r,
+        (SELECT acts.rule_id,
+          notif.recipient
+        FROM sysman.em_rule_cond_actions acts,
+          sysman.em_rule_basic_notifications notif
+        WHERE acts.COND_ACTION_ID = notif.COND_ACTION_ID
+        ) rr
+      WHERE r.rule_id = rr.rule_id
+      GROUP BY r.ruleset_id
+      ) rsusrers
+    ON EmRuleSetsEO.ruleset_id   =rsusrers.ruleset_id
+    WHERE EmRuleSetsEO.Is_Visible=1
+    ORDER BY RULESET_ORDER
+    )
+  ) 
+WHERE is_enabled = 0
+';
+END;
+/
+@@emd360_9a_pre_one.sql
+*/
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of New Incidents Created';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_new,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(resolution_state) is_new
+		from sysman.mgmt$incidents
+		where resolution_state = ''New''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'New Incidents Per Day';
+DEF abstract = 'New Incidents Per Day';
+DEF foot = 'Chart represents how many new incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of Closed Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_closed,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(resolution_state) is_closed
+		from sysman.mgmt$incidents
+		where resolution_state = ''Closed''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'Closed Incidents Per Day';
+DEF abstract = 'Closed Incidents Per Day';
+DEF foot = 'Chart represents how many closed incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of Urgent Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_urgent,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(priority) is_urgent
+		from sysman.mgmt$incidents
+		where priority = ''Urgent''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'Urgent Incidents Per Day';
+DEF abstract = 'Urgent Incidents Per Day';
+DEF foot = 'Chart represents how many urgent incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of Very High Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_very_high,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(priority) is_very_high
+		from sysman.mgmt$incidents
+		where priority = ''Very High''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'Very High Incidents Per Day';
+DEF abstract = 'Very High Incidents Per Day';
+DEF foot = 'Chart represents how many very high incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of High Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_high,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(priority) is_high
+		from sysman.mgmt$incidents
+		where priority = ''High''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'High Incidents Per Day';
+DEF abstract = 'High Incidents Per Day';
+DEF foot = 'Chart represents how many high incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of Medium Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_medium,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(priority) is_medium
+		from sysman.mgmt$incidents
+		where priority = ''Medium''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'Medium Incidents Per Day';
+DEF abstract = 'Medium Incidents Per Day';
+DEF foot = 'Chart represents how many medium incidents per day';
+@@emd360_9a_pre_one.sql
+
+-----------------------------------------
+-----------------------------------------
+
+DEF chartype = 'LineChart';
+DEF stacked = '';
+DEF tit_01 = 'Incidents';
+DEF tit_02 = '';
+DEF tit_03 = '';
+DEF tit_04 = '';
+DEF tit_05 = '';
+DEF tit_06 = '';
+DEF tit_07 = '';
+DEF tit_08 = '';
+DEF tit_09 = '';
+DEF tit_10 = '';
+DEF tit_11 = '';
+DEF tit_12 = '';
+DEF tit_13 = '';
+DEF tit_14 = '';
+DEF tit_15 = '';
+
+DEF main_table = 'sysman.mgmt$incidents';
+DEF vaxis = 'Amount Of Low Incidents';
+
+BEGIN
+ :sql_text := '
+select 0 snap_id,
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') begin_notify_date, 
+       TO_CHAR(cdate, ''YYYY-MM-DD HH24:MI'') end_notify_date,
+       is_low,
+       0 dummy_02,
+       0 dummy_03,
+       0 dummy_04,
+       0 dummy_05,
+       0 dummy_06,
+       0 dummy_07,
+       0 dummy_08,
+       0 dummy_09,
+       0 dummy_10,
+       0 dummy_11,
+       0 dummy_12,
+       0 dummy_13,
+       0 dummy_14,
+       0 dummy_15
+from (select trunc(creation_date) cdate, count(priority) is_low
+		from sysman.mgmt$incidents
+		where priority = ''Medium''
+		and creation_date >= sysdate - 31
+		group by trunc(creation_date))
+order by 3
+';
+END;
+/
+
+DEF skip_lch='';
+DEF title = 'Low Incidents Per Day';
+DEF abstract = 'Low Incidents Per Day';
+DEF foot = 'Chart represents how many Low incidents per day';
+@@emd360_9a_pre_one.sql
