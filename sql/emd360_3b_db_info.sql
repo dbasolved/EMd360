@@ -1,9 +1,9 @@
-DEF section_name = 'General Information';
+DEF section_name = '3b. Database Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'System Global Aera';
+DEF title = '1. System Global Aera';
 DEF main_table = 'sysman.mgmt$db_sga';
 BEGIN
   :sql_text := '
@@ -15,7 +15,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'System Global Aera (Dynamic Components)';
+DEF title = '2. System Global Aera (Dynamic Components)';
 DEF main_table = 'sys.v$sga_dynamic_components';
 BEGIN
   :sql_text := '
@@ -44,7 +44,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Memory Resize Operations';
+DEF title = '3. Memory Resize Operations';
 DEF main_table = 'sys.v$sga_resize_ops';
 BEGIN
   :sql_text := '
@@ -71,7 +71,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'SGA Resize Operations Summary';
+DEF title = '4. SGA Resize Operations Summary';
 DEF main_table = 'sys.v$sga_resize_ops';
 BEGIN
   :sql_text := '
@@ -98,7 +98,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Memory Resize Operations Summary';
+DEF title = '5. Memory Resize Operations Summary';
 DEF main_table = 'sys.v$memory_resize_ops';
 BEGIN
   :sql_text := '
@@ -125,7 +125,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'PGA Resize Operations Overview';
+DEF title = '6. PGA Resize Operations Overview';
 DEF main_table = 'sys.dba_hist_pgastat';
 BEGIN
   :sql_text := '
@@ -147,7 +147,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Options';
+DEF title = '7. Options';
 DEF main_table = 'sysman.mgmt$db_options';
 BEGIN
   :sql_text := '
@@ -159,7 +159,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Initialization Parameters';
+DEF title = '8. Initialization Parameters';
 DEF main_table = 'sysman.mgmt$db_init_params';
 BEGIN
   :sql_text := '
@@ -171,7 +171,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'License Info';
+DEF title = '9. License Info';
 DEF main_table = 'sysman.mgmt$db_init_params';
 BEGIN
   :sql_text := '

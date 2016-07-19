@@ -1,4 +1,4 @@
-EMd360 v1602 (2016-03-15) by Bobby Curtis
+EMd360 v1603 (2016-07-19) by Bobby Curtis
 
 EMd360 is a "free to use" tool to perform an in-depth investigation of a Oracle Enterprise 
 Manager environment. It collects detailed information around the Oracle Management Server (OMS)
@@ -44,3 +44,19 @@ Steps
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*****************************************************************************************
+
+History
+~~~~~~~
+EMd360 v1602 (2016-03-15) by Bobby Curtis
+
+-Initial release
+
+EMd360 v1603 (2016-07-19) by Bobby Curtis
+
+-Added security (certificate) related items in the security section for agents and OMS
+-Renumbered the output by section and sub-section
+-Capitalized the headers of each column to see clearer
+
+

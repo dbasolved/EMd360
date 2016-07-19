@@ -1,9 +1,9 @@
-DEF section_name = 'Groups';
+DEF section_name = '4b. Groups';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'All Groups';
+DEF title = '1. All Groups';
 DEF main_table = 'sysman.mgmt$group_members';
 BEGIN
   :sql_text := '
@@ -14,7 +14,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Target Count Per Group';
+DEF title = '2. Target Count Per Group';
 DEF main_table = 'sysman.mgmt$group_members';
 BEGIN
   :sql_text := '
@@ -26,7 +26,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Derived Group Membership';
+DEF title = '3. Derived Group Membership';
 DEF main_table = 'sysman.mgmt$group_members';
 BEGIN
   :sql_text := '

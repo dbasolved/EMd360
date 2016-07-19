@@ -1,4 +1,4 @@
-DEF section_name = 'Load Metrics';
+DEF section_name = '4d. Load Metrics';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -67,7 +67,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Memory Used Percentage';
+DEF title = '1. Memory Used Percentage';
 DEF abstract = 'Memory Used Percentage';
 DEF foot = 'Chart represents the OMS Memory used per day';
 @@emd360_9a_pre_one.sql
@@ -139,7 +139,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Number of Processes';
+DEF title = '2. Number of Processes';
 DEF abstract = 'Number of Processes';
 DEF foot = 'Chart represents the number of processes on OMS used per day';
 @@emd360_9a_pre_one.sql
@@ -211,7 +211,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Page Scan Rate';
+DEF title = '3. Page Scan Rate';
 DEF abstract = 'Page Scan Rate';
 DEF foot = 'Chart represents the number of OMS page scans per day';
 @@emd360_9a_pre_one.sql
@@ -283,7 +283,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Memory Free Percentage';
+DEF title = '4. Memory Free Percentage';
 DEF abstract = 'Memory Free Percentage';
 DEF foot = 'Chart represents the percentage of memory free per day';
 @@emd360_9a_pre_one.sql
@@ -355,7 +355,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Logical Free Memory Percentage';
+DEF title = '5. Logical Free Memory Percentage';
 DEF abstract = 'Logical Free Memory Percentage';
 DEF foot = 'Chart represents the logical free memory on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -427,7 +427,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Number of Users';
+DEF title = '6. Number of Users';
 DEF abstract = 'Number of Users';
 DEF foot = 'Chart represents the number of users on OMS used per day';
 @@emd360_9a_pre_one.sql
@@ -499,7 +499,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Used Swap Space';
+DEF title = '7. Used Swap Space';
 DEF abstract = 'Used Swap Space';
 DEF foot = 'Chart represents the amout of swap used on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -571,7 +571,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Load per 1 minute';
+DEF title = '8. CPU Load per 1 minute';
 DEF abstract = 'CPU Load per 1 minute';
 DEF foot = 'Chart represents the load on cpu in 1 minute increments per day';
 @@emd360_9a_pre_one.sql
@@ -643,7 +643,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Memory Used Percentage';
+DEF title = '9. Memory Used Percentage';
 DEF abstract = 'Memory Used Percentage';
 DEF foot = 'Chart represents the amount of memory used on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -715,7 +715,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount of CPU Interruption';
+DEF title = '10. Amount of CPU Interruption';
 DEF abstract = 'Amount of CPU Interruption';
 DEF foot = 'Chart represents the amount of CPU interruption on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -787,7 +787,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Page Transfer Rate';
+DEF title = '11. Page Transfer Rate';
 DEF abstract = 'Page Transfer Rate';
 DEF foot = 'Chart represents the amount of page transfers on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -859,7 +859,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Load per 15 minutes';
+DEF title = '12. CPU Load per 15 minutes';
 DEF abstract = 'CPU Load per 15 minutes';
 DEF foot = 'Chart represents the amount of CPU load in 15 minute intervals on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -931,7 +931,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Swap Utilization';
+DEF title = '13. Swap Utilization';
 DEF abstract = 'Swap Utilization';
 DEF foot = 'Chart represents the amout of swap used by OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1003,7 +1003,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Utilization';
+DEF title = '14. CPU Utilization';
 DEF abstract = 'CPU Utilization';
 DEF foot = 'Chart represents the amout of CPU utilization on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1075,7 +1075,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Kernel Utilization';
+DEF title = '15. CPU Kernel Utilization';
 DEF abstract = 'CPU Kernel Utilization';
 DEF foot = 'Chart represents the amount of CPU/Kernel utilization on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1147,7 +1147,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Free Swap';
+DEF title = '16. Free Swap';
 DEF abstract = 'Free Swap';
 DEF foot = 'Chart represents the amount of free swap on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1219,7 +1219,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Overall CPU Load';
+DEF title = '17. Overall CPU Load';
 DEF abstract = 'Overall CPU Load';
 DEF foot = 'Chart represents the amout of CPU Load on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1291,7 +1291,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Active Memory';
+DEF title = '18. Active Memory';
 DEF abstract = 'Active Memory';
 DEF foot = 'Chart represents the active memory on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1363,7 +1363,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Free Memory';
+DEF title = '19. Free Memory';
 DEF abstract = 'Free Memory';
 DEF foot = 'Chart represents the amount of free memory on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1435,7 +1435,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount of CPU IO Wait';
+DEF title = '20. Amount of CPU IO Wait';
 DEF abstract = 'Amount of CPU IO Wait';
 DEF foot = 'Chart represents the amount of CPU IO wait on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1507,7 +1507,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount of Active Logcial Memory';
+DEF title = '21. Amount of Active Logcial Memory';
 DEF abstract = 'Amount of Active Logical Memory';
 DEF foot = 'Chart represents the amount of active logical memory on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1579,7 +1579,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Per User';
+DEF title = '22. CPU Per User';
 DEF abstract = 'CPU Per User';
 DEF foot = 'Chart represents the amount of CPU per user on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1651,7 +1651,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Logical Memory Used Percentage';
+DEF title = '23. Logical Memory Used Percentage';
 DEF abstract = 'Logical Memory Used Percentage';
 DEF foot = 'Chart represents the amount of logical memory used on OMS per day';
 @@emd360_9a_pre_one.sql
@@ -1723,7 +1723,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Queue Length';
+DEF title = '24. CPU Queue Length';
 DEF abstract = 'CPU Queue Length';
 DEF foot = 'Chart represents the queue length on the cpu on OMS per day';
 @@emd360_9a_pre_one.sql

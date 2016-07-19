@@ -1,9 +1,9 @@
-DEF section_name = 'Target Specific Info';
+DEF section_name = '6a. Target Specific Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Data Files';
+DEF title = '1. Data Files';
 DEF main_table = 'sysman.mgmt$db_datafiles';
 BREAK target_name;
 BEGIN

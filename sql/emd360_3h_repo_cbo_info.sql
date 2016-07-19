@@ -1,9 +1,9 @@
-DEF section_name = 'Cost Based Optimizer Info';
+DEF section_name = '3h. Cost Based Optimizer Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'CBO System Settings';
+DEF title = '1. CBO System Settings';
 DEF main_table = 'sys.user_tab_stat_prefs';
 BEGIN
  :sql_text := '
@@ -27,7 +27,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'CBO Repository Settings';
+DEF title = '2. CBO Repository Settings';
 DEF main_table = 'sysman.em_stats_monitor';
 BEGIN
  :sql_text := '
@@ -51,7 +51,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'CBO Statistics Gathering Log (last 31 days)';
+DEF title = '3. CBO Statistics Gathering Log (last 31 days)';
 DEF main_table = 'sysman.em_stats_monitor';
 BEGIN
  :sql_text := '

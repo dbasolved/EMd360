@@ -9,8 +9,8 @@ CL COL;
 COL row_num FOR 9999999 HEA '#' PRI;
 
 -- version
-DEF emd360_vYYNN = 'v1602';
-DEF emd360_vrsn = '&&emd360_vYYNN. (2016-03-22)';
+DEF emd360_vYYNN = 'v1603';
+DEF emd360_vrsn = '&&emd360_vYYNN. (2016-07-19)';
 DEF emd360_prefix = 'emd360';
 
 -- get dbid
@@ -35,6 +35,8 @@ END;
 PRO
 PRO Parameter 2: 
 PRO Name of Oracle Management Repository (OMR)? (required)
+PRO
+PRO If OMR is a PDB, use the CDB name.
 PRO
 COL emd360db_guid new_V emd360db_guid FOR A60;
 SELECT target_guid emd360db_guid FROM SYSMAN.MGMT$TARGET WHERE TARGET_NAME LIKE TRIM(LOWER('&2%')) AND TARGET_TYPE = LOWER('ORACLE_DATABASE')

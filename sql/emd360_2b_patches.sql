@@ -1,9 +1,9 @@
-DEF section_name = 'Patches';
+DEF section_name = '2b. Patches';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Applied Patches';
+DEF title = '1. Applied Patches';
 DEF main_table = 'sysman.mgmt$applied_patches';
 BEGIN
  :sql_text := '

@@ -1,9 +1,9 @@
-DEF section_name = 'OMR Version';
+DEF section_name = '3a. Version';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Version';
+DEF title = '1. Version';
 DEF main_table = 'sys.v$instance';
 BEGIN
  :sql_text := '
@@ -14,7 +14,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Banner Info';
+DEF title = '2. Banner Info';
 DEF main_table = 'sys.v$version';
 BEGIN
  :sql_text := '
@@ -25,7 +25,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'General Info';
+DEF title = '3. General Info';
 DEF main_table = 'sys.v$database';
 BEGIN
  :sql_text := '
@@ -36,7 +36,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Logging Info';
+DEF title = '4. Logging Info';
 DEF main_table = 'sys.v$database';
 BEGIN
  :sql_text := '
@@ -47,7 +47,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'DataGuard Info';
+DEF title = '5. DataGuard Info';
 DEF main_table = 'sys.v$database';
 BEGIN
  :sql_text := '
@@ -58,7 +58,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Instance Info';
+DEF title = '6. Instance Info';
 DEF main_table = 'sys.v$instance';
 BEGIN
  :sql_text := '

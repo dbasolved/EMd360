@@ -1,9 +1,9 @@
-DEF section_name = 'Agent Information';
+DEF section_name = '2g. Agent Information';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Active Agents';
+DEF title = '1. Active Agents';
 DEF main_table = 'sysman.mgmt_current_availability';
 BEGIN
  :sql_text := '
@@ -16,7 +16,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Agents Installed';
+DEF title = '2. Agents Installed';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -33,7 +33,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Deployed Agent Plugins';
+DEF title = '3. Deployed Agent Plugins';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -51,7 +51,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Agent-side targets';
+DEF title = '4. Agent-side targets';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -66,7 +66,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Repository upload URLs';
+DEF title = '5. Repository upload URLs';
 DEF main_table = 'sysman.mgmt_target_properties';
 BEGIN
  :sql_text := '
@@ -80,7 +80,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Target Distribution';
+DEF title = '6. Target Distribution';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -100,7 +100,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Avaliablity (Ping) Status';
+DEF title = '7. Avaliablity (Ping) Status';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -111,7 +111,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Agent Down Statistics';
+DEF title = '8. Agent Down Statistics';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -124,7 +124,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Current Avaliablity';
+DEF title = '9. Current Avaliablity';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -140,7 +140,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Marker Avaliablity';
+DEF title = '10. Marker Avaliablity';
 DEF main_table = 'sysman.em_manageable_entities';
 BEGIN
  :sql_text := '
@@ -156,7 +156,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'System Errors (Last 31 Days)';
+DEF title = '11. System Errors (Last 31 Days)';
 DEF main_table = 'sysman.mgmt_system_error_log';
 BEGIN
  :sql_text := '
@@ -174,4 +174,3 @@ ORDER BY t.entity_name, l.module_name
 END;
 /
 @@emd360_9a_pre_one.sql
-

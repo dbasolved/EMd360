@@ -1,9 +1,9 @@
-DEF section_name = 'Tablespace Information';
+DEF section_name = '3e. Tablespace Information';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Datafile Sizes';
+DEF title = '1. Datafile Sizes';
 DEF main_table = 'sys.dba_data_files';
 
 col total_size_mb format 9999999999;
@@ -20,7 +20,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Tablespace Sizes';
+DEF title = '2. Tablespace Sizes';
 DEF main_table = 'sys.dba_data_files';
 BEGIN
  :sql_text := '
@@ -32,7 +32,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Tablespace Percent Used';
+DEF title = '3. Tablespace Percent Used';
 DEF main_table = 'sys.dba_data_files';
 BEGIN
  :sql_text := '

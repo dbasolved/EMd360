@@ -1,4 +1,4 @@
-DEF section_name = 'Compacity Planning';
+DEF section_name = '6b. Compacity Planning';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -42,7 +42,7 @@ END;
 -----------------------------
 -----------------------------
 
-DEF title = 'Average CPU Used Per Quarter (Percentage)'
+DEF title = '1. Average CPU Used Per Quarter (Percentage)'
 DEF main_table = 'sysman.mgmt_metrics';
 
 
@@ -118,7 +118,7 @@ END;
 -----------------------------
 -----------------------------
 
-DEF title = 'Average Memory Used Per Quarter (Percentage)'
+DEF title = '2. Average Memory Used Per Quarter (Percentage)'
 DEF main_table = 'sysman.mgmt_metrics';
 
 

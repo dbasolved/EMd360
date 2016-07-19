@@ -1,4 +1,4 @@
-DEF section_name = 'Load Metrics - Top 5 Targets';
+DEF section_name = '6c. Load Metrics - Top 5 Targets';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -113,7 +113,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Memory Used Percentage';
+DEF title = '1. Memory Used Percentage';
 DEF abstract = 'Memory Used Percentage';
 DEF foot = 'Chart represents the top 5 targets max memory used per day';
 @@emd360_9a_pre_one.sql
@@ -225,7 +225,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Number of Processes';
+DEF title = '2. Number of Processes';
 DEF abstract = 'Number of Processes';
 DEF foot = 'Chart represents the top 5 targets with number of processes per day';
 @@emd360_9a_pre_one.sql
@@ -337,7 +337,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Page Scan Rate';
+DEF title = '3. Page Scan Rate';
 DEF abstract = 'Page Scan Rate';
 DEF foot = 'Chart represents the top 5 targets with highest page scan rates per day';
 @@emd360_9a_pre_one.sql
@@ -449,7 +449,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Free Memory Percentage';
+DEF title = '4. Free Memory Percentage';
 DEF abstract = 'Free Memory Percentage';
 DEF foot = 'Chart represents the top 5 targets memory free percentage per day';
 @@emd360_9a_pre_one.sql
@@ -561,7 +561,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Logical Free Memory Percentage';
+DEF title = '5. Logical Free Memory Percentage';
 DEF abstract = 'Logical Free Memory Percentage';
 DEF foot = 'Chart represents the top 5 targets with logicial free memory percentage per day';
 @@emd360_9a_pre_one.sql
@@ -673,7 +673,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Number of Users';
+DEF title = '6. Number of Users';
 DEF abstract = 'Number of Users';
 DEF foot = 'Chart represents the top 5 targets with number of users per day';
 @@emd360_9a_pre_one.sql
@@ -785,7 +785,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Used Swap Space';
+DEF title = '7. Used Swap Space';
 DEF abstract = 'Used Swap Space';
 DEF foot = 'Chart represents the top 5 targets with used swap space per day';
 @@emd360_9a_pre_one.sql
@@ -897,7 +897,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'CPU Load per 1 minute';
+DEF title = '8. CPU Load per 1 minute';
 DEF abstract = 'CPU Load per 1 minute';
 DEF foot = 'Chart represents the top 5 targets with max cpu load per minute per day';
 @@emd360_9a_pre_one.sql
@@ -1009,7 +1009,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Memory Used Percentage';
+DEF title = '9. Memory Used Percentage';
 DEF abstract = 'Memory Used Percentage';
 DEF foot = 'Chart represents the top 5 targets with max meory used percentages per day';
 @@emd360_9a_pre_one.sql
@@ -1121,7 +1121,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount of CPU Interruption';
+DEF title = '10. Amount of CPU Interruption';
 DEF abstract = 'Amount of CPU Interruption';
 DEF foot = 'Chart represents the top 5 targets with max amount of CPU interruption per day';
 @@emd360_9a_pre_one.sql
@@ -1233,7 +1233,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Page Transfer Rate';
+DEF title = '11. Page Transfer Rate';
 DEF abstract = 'Page Transfer Rate';
 DEF foot = 'Chart represents the top 5 targets with max page transfer rates per day';
 @@emd360_9a_pre_one.sql
@@ -1344,7 +1344,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max CPU Load Per 15 Minutes';
+DEF title = '12. Max CPU Load Per 15 Minutes';
 DEF abstract = 'Max CPU Load Per 15 Minutes';
 DEF foot = 'Chart represents the top 5 targets with max CPU load per 15 minutes per day';
 @@emd360_9a_pre_one.sql
@@ -1456,7 +1456,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Swap Utilization';
+DEF title = '13. Max Swap Utilization';
 DEF abstract = 'Max Swap Utilization';
 DEF foot = 'Chart represents the top 5 targets with max swap utilization per day';
 @@emd360_9a_pre_one.sql
@@ -1568,7 +1568,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max CPU Utilization';
+DEF title = '14. Max CPU Utilization';
 DEF abstract = 'Max CPU Utilization';
 DEF foot = 'Chart represents the top 5 targets with max CPU utilization per day';
 @@emd360_9a_pre_one.sql
@@ -1680,7 +1680,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max CPU Kernel Utilization';
+DEF title = '15. Max CPU Kernel Utilization';
 DEF abstract = 'Max CPU Kernel Utilization';
 DEF foot = 'Chart represents the top 5 targets with max CPU Kernel utilization per day';
 @@emd360_9a_pre_one.sql
@@ -1792,7 +1792,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Free Swap';
+DEF title = '16. Max Free Swap';
 DEF abstract = 'Max Free Swap';
 DEF foot = 'Chart represents the top 5 targets with max free swap per day';
 @@emd360_9a_pre_one.sql
@@ -1904,7 +1904,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Overall CPU Load';
+DEF title = '17. Max Overall CPU Load';
 DEF abstract = 'Max Overall CPU Load';
 DEF foot = 'Chart represents the top 5 targets with max overall CPU load per day';
 @@emd360_9a_pre_one.sql
@@ -2016,7 +2016,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Active Memory';
+DEF title = '18. Max Active Memory';
 DEF abstract = 'Max Active Memory';
 DEF foot = 'Chart represents the top 5 targets with max active memory per day';
 @@emd360_9a_pre_one.sql
@@ -2128,7 +2128,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Free Memory';
+DEF title = '19. Max Free Memory';
 DEF abstract = 'Max Free Memory';
 DEF foot = 'Chart represents the top 5 targets with max free memory per day';
 @@emd360_9a_pre_one.sql
@@ -2240,7 +2240,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Amount of CPU IO Wait';
+DEF title = '20. Max Amount of CPU IO Wait';
 DEF abstract = 'Max Amount of CPU IO Wait';
 DEF foot = 'Chart represents the top 5 targets with max amunt of CPU IO wait per day';
 @@emd360_9a_pre_one.sql
@@ -2352,7 +2352,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Amount of Active Logcial Memory';
+DEF title = '21. Max Amount of Active Logcial Memory';
 DEF abstract = 'Max Amount of Active Logical Memory';
 DEF foot = 'Chart represents the top 5 targets with max amount of active logical memory per day';
 @@emd360_9a_pre_one.sql
@@ -2464,7 +2464,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max CPU Per User';
+DEF title = '22. Max CPU Per User';
 DEF abstract = 'Max CPU Per User';
 DEF foot = 'Chart represents the top 5 targets with max CPU per user per day';
 @@emd360_9a_pre_one.sql
@@ -2576,7 +2576,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max Logcial Memory Used Percentage';
+DEF title = '23. Max Logcial Memory Used Percentage';
 DEF abstract = 'Max Logcial Memory Used Percentage';
 DEF foot = 'Chart represents the top 5 targets with max logcial memory used percentage per day';
 @@emd360_9a_pre_one.sql
@@ -2688,7 +2688,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Max CPU Queue Length';
+DEF title = '24. Max CPU Queue Length';
 DEF abstract = 'Max CPU Queue Length';
 DEF foot = 'Chart represents the top 5 targets with max CPU queue length per day';
 @@emd360_9a_pre_one.sql

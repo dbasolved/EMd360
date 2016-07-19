@@ -1,9 +1,9 @@
-DEF section_name = 'Targets';
+DEF section_name = '4a. Targets';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'All Targets';
+DEF title = '1. All Targets';
 DEF main_table = 'sysman.mgmt$target';
 BEGIN
   :sql_text := '
@@ -13,7 +13,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Counts By Target Type';
+DEF title = '2. Counts By Target Type';
 DEF main_table = 'sysman.mgmt$target';
 BEGIN
   :sql_text := '

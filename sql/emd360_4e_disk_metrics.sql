@@ -1,4 +1,4 @@
-DEF section_name = 'Disk Metrics';
+DEF section_name = '4e. Disk Metrics';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -67,7 +67,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Disk Usage';
+DEF title = '1. Total Disk Usage';
 DEF abstract = 'Total Disk Usage';
 DEF foot = 'Chart represents the OMS total disk usage per day';
 @@emd360_9a_pre_one.sql
@@ -139,7 +139,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Disk Available Percentage';
+DEF title = '2. Total Disk Available Percentage';
 DEF abstract = 'Total Disk Available Percentage';
 DEF foot = 'Chart represents the OMS total disk percentage per day';
 @@emd360_9a_pre_one.sql
@@ -211,7 +211,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Disk Available';
+DEF title = '3. Total Disk Available';
 DEF abstract = 'Total Disk Available';
 DEF foot = 'Chart represents the OMS total disk available per day';
 @@emd360_9a_pre_one.sql
@@ -283,7 +283,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Disk Used';
+DEF title = '4. Total Disk Used';
 DEF abstract = 'Total Disk Used';
 DEF foot = 'Chart represents the OMS total disk used per day';
 @@emd360_9a_pre_one.sql
@@ -355,7 +355,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Disk Usage Percentage';
+DEF title = '5. Total Disk Usage Percentage';
 DEF abstract = 'Total Disk Usage Percentage';
 DEF foot = 'Chart represents the OMS total disk used percentage per day';
 @@emd360_9a_pre_one.sql

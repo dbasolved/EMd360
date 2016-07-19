@@ -1,9 +1,9 @@
-DEF section_name = 'Session Info';
+DEF section_name = '3d. Session Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Active Sessions';
+DEF title = '1. Active Sessions';
 DEF main_table = 'sys.v$session';
 BEGIN
   :sql_text := '
@@ -15,7 +15,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Inactive Sessions';
+DEF title = '2. Inactive Sessions';
 DEF main_table = 'sys.v$session';
 BEGIN
   :sql_text := '

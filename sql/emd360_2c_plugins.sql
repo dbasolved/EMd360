@@ -1,9 +1,9 @@
-DEF section_name = 'Plug-Ins';
+DEF section_name = '2c. Plug-Ins';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Repository Plug-Ins';
+DEF title = '1. Repository Plug-Ins';
 DEF main_table = 'sysman.GC_CURRENT_DEPLOYED_PLUGIN';
 BEGIN
  :sql_text := '
@@ -21,7 +21,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Oracle Management Server (OMS) Plug-Ins';
+DEF title = '2. Oracle Management Server (OMS) Plug-Ins';
 DEF main_table = 'sysman.GC_CURRENT_DEPLOYED_PLUGIN';
 BEGIN
  :sql_text := '
@@ -39,7 +39,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Agent Plug-Ins';
+DEF title = '3. Agent Plug-Ins';
 DEF main_table = 'sysman.GC_CURRENT_DEPLOYED_PLUGIN';
 BEGIN
  :sql_text := '

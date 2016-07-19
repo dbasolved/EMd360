@@ -1,4 +1,4 @@
-DEF section_name = 'Notify Requests';
+DEF section_name = '2f. Notify Requests';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -54,7 +54,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Notify Requests - Total';
+DEF title = '1. Notify Requests - Total';
 DEF abstract = 'Notify Request Totals';
 DEF foot = 'Chart represents how many notifications have been sent per day';
 @@emd360_9a_pre_one.sql
@@ -113,7 +113,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Notify Requests - Email';
+DEF title = '1. Notify Requests - Email';
 DEF abstract = 'Notify Request - Email';
 DEF foot = 'Chart represents how many notifications have been sent per day';
 @@emd360_9a_pre_one.sql
@@ -172,7 +172,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Notify Request - SNMP';
+DEF title = '3. Notify Request - SNMP';
 DEF abstract = 'Notify Request - SNMP';
 DEF foot = 'Chart represents how many notifications have been sent per day';
 @@emd360_9a_pre_one.sql

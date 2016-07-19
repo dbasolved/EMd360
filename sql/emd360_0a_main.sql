@@ -5,12 +5,12 @@ DEF max_col_number = '6';
 DEF column_number = '0';
 SPO &&emd360_main_report..html APP;
 PRO <table><tr class="main">
-PRO <td class="c">Physical Information</td>
-PRO <td class="c">Oracle Management Server Information</td>
-PRO <td class="c">Oracle Management Repository Information</td>
-PRO <td class="c">Configuration Information</td>
-PRO <td class="c">Security Information</td>
-PRO <td class="c">General Target Information</td>
+PRO <td class="c">PHYSICAL INFORMATION</td>
+PRO <td class="c">ORACLE MANAGEMENT SERVER INFORMATION</td>
+PRO <td class="c">ORACLE MANAGEMENT REPOSITORY INFORMATION</td>
+PRO <td class="c">CONFIGURATION INFORMATION</td>
+PRO <td class="c">SECURITY INFORMATION</td>
+PRO <td class="c">GENERAL TARGET INFORMATION</td>
 PRO </tr><tr class="main"><td>
 PRO <img src="EMd360_img.jpg" alt="EMd360" height="228" width="230" />
 PRO <br>
@@ -98,6 +98,8 @@ SPO OFF;
 
 @@emd360_5a_administrators.sql
 @@emd360_5b_roles.sql
+@@emd360_5c_agents.sql
+@@emd360_5d_oms.sql
 --@@emd360_3a_objects.sql
 
 PRO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

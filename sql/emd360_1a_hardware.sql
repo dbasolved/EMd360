@@ -1,9 +1,9 @@
-DEF section_name = 'Hardware';
+DEF section_name = '1a. Hardware';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Target Details';
+DEF title = '1. Target Details';
 DEF main_table = 'sysman.mgmt$target';
 BEGIN
   :sql_text := '
@@ -15,7 +15,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'CPU Details';
+DEF title = '2. CPU Details';
 DEF main_table = 'sysman.mgmt$hw_cpu_details';
 BEGIN
   :sql_text := '
@@ -27,7 +27,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Host File Details';
+DEF title = '3. Host File Details';
 DEF main_table = 'sysman.mgmt$hw_hosts_file';
 BEGIN
   :sql_text := '
@@ -39,7 +39,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'IO Devices';
+DEF title = '4. IO Devices';
 DEF main_table = 'sysman.mgmt$hw_io_devices';
 BEGIN
   :sql_text := '
@@ -51,7 +51,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Network Devices';
+DEF title = '5. Network Devices';
 DEF main_table = 'sysman.mgmt$hw_nic';
 BEGIN
   :sql_text := '

@@ -1,9 +1,9 @@
-DEF section_name = 'Blackout Operations';
+DEF section_name = '2d. Blackout Operations';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Blackouts that have been started';
+DEF title = '1. Blackouts that have been started';
 DEF main_table = 'sysman.MGMT$BLACKOUTS';
 BEGIN
   :sql_text := '
@@ -26,7 +26,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Blackout history last &&emd360_conf_days.';
+DEF title = '2. Blackout history last &&emd360_conf_days.';
 DEF main_table = 'sysman.mgmt$blackout_history';
 BEGIN
   :sql_text := '

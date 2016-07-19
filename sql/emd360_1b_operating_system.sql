@@ -1,9 +1,9 @@
-DEF section_name = 'Operating System';
+DEF section_name = '1b. Operating System';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Operating System Sumamry';
+DEF title = '1. Operating System Sumamry';
 DEF main_table = 'sysman.mgmt$os_summary';
 BEGIN
  :sql_text := '
@@ -15,7 +15,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Hardware Summary Reported by Operating System';
+DEF title = '2. Hardware Summary Reported by Operating System';
 DEF main_table = 'sysman.mgmt$os_summary';
 BEGIN
  :sql_text := '
@@ -27,7 +27,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Hardware Summary Reported by Operating System 2';
+DEF title = '3. Hardware Summary Reported by Operating System 2';
 DEF main_table = 'sysman.mgmt$os_summary';
 BEGIN
  :sql_text := '
@@ -39,7 +39,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Components';
+DEF title = '4. Operating System Components';
 DEF main_table = 'sysman.mgmt$os_components';
 BEGIN
  :sql_text := '
@@ -51,7 +51,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Services';
+DEF title = '5. Operating System Services';
 DEF main_table = 'sysman.mgmt$os_init_services';
 BEGIN
  :sql_text := '
@@ -63,7 +63,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Kernel Parameters';
+DEF title = '6. Operating System Kernel Parameters';
 DEF main_table = 'sysman.mgmt$os_kernel_params';
 BEGIN
  :sql_text := '
@@ -75,7 +75,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Limits';
+DEF title = '7. Operating System Limits';
 DEF main_table = 'sysman.mgmt$os_limits';
 BEGIN
  :sql_text := '
@@ -87,7 +87,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Modules';
+DEF title = '8. Operating System Modules';
 DEF main_table = 'sysman.mgmt$os_modules';
 BEGIN
  :sql_text := '
@@ -99,7 +99,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System File System Mounts';
+DEF title = '9. Operating System File System Mounts';
 DEF main_table = 'sysman.mgmt$os_fs_mount';
 BEGIN
  :sql_text := '
@@ -111,7 +111,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Patch Summary';
+DEF title = '10. Operating System Patch Summary';
 DEF main_table = 'sysman.mgmt$os_patch_summary';
 BEGIN
  :sql_text := '
@@ -123,7 +123,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Patches';
+DEF title = '11. Operating System Patches';
 DEF main_table = 'sysman.mgmt$os_patches';
 BEGIN
  :sql_text := '
@@ -135,7 +135,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Operating System Properties';
+DEF title = '12. Operating System Properties';
 DEF main_table = 'sysman.mgmt$os_properties';
 BEGIN
  :sql_text := '

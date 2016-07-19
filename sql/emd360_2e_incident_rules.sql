@@ -1,4 +1,4 @@
-DEF section_name = 'Incidents';
+DEF section_name = '2e. Incidents';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -55,7 +55,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'New Incidents Per Day';
+DEF title = '1. New Incidents Per Day';
 DEF abstract = 'Amount of New Incidents (Per Day)';
 DEF foot = 'Chart represents how many new incidents per day';
 @@emd360_9a_pre_one.sql
@@ -115,7 +115,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of Closed Incidents (Per Day)';
+DEF title = '2. Amount Of Closed Incidents (Per Day)';
 DEF abstract = 'Amount Of Closed Incidents (Per Day)';
 DEF foot = 'Chart represents how many closed incidents per day';
 @@emd360_9a_pre_one.sql
@@ -175,7 +175,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of Urgent Incidents (Per Day)';
+DEF title = '3. Amount Of Urgent Incidents (Per Day)';
 DEF abstract = 'Amount Of Urgent Incidents (Per Day)';
 DEF foot = 'Chart represents how many urgent incidents per day';
 @@emd360_9a_pre_one.sql
@@ -235,7 +235,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of Very High Incidents (Per Day)';
+DEF title = '4. Amount Of Very High Incidents (Per Day)';
 DEF abstract = 'Amount Of Very High Incidents (Per Day)';
 DEF foot = 'Chart represents how many very high incidents per day';
 @@emd360_9a_pre_one.sql
@@ -295,7 +295,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of High Incidents (Per Day)';
+DEF title = '5. Amount Of High Incidents (Per Day)';
 DEF abstract = 'Amount Of High Incidents (Per Day)';
 DEF foot = 'Chart represents how many high incidents per day';
 @@emd360_9a_pre_one.sql
@@ -355,7 +355,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of Medium Incidents (Per Day)';
+DEF title = '6. Amount Of Medium Incidents (Per Day)';
 DEF abstract = 'Amount Of Medium Incidents (Per Day)';
 DEF foot = 'Chart represents how many medium incidents per day';
 @@emd360_9a_pre_one.sql
@@ -415,7 +415,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Amount Of Low Incidents (Per Day)';
+DEF title = '7. Amount Of Low Incidents (Per Day)';
 DEF abstract = 'Amount Of Low Incidents (Per Day)';
 DEF foot = 'Chart represents how many Low incidents per day';
 @@emd360_9a_pre_one.sql

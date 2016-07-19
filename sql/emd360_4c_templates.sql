@@ -1,9 +1,9 @@
-DEF section_name = 'Templates';
+DEF section_name = '4c. Templates';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Number of Templates';
+DEF title = '1. Number of Templates';
 DEF main_table = 'sysman.mgmt$templates';
 BEGIN
   :sql_text := '
@@ -25,7 +25,7 @@ END;
 @@emd360_9a_pre_one.sql
 
 
-DEF title = 'Default Templates';
+DEF title = '2. Default Templates';
 DEF main_table = 'sysman.mgmt$templates';
 BEGIN
   :sql_text := '
@@ -37,7 +37,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Non-Certified Templates';
+DEF title = '3. Non-Certified Templates';
 DEF main_table = 'sysman.mgmt$templates';
 BEGIN
   :sql_text := '
@@ -55,7 +55,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Template Metrics';
+DEF title = '4. Template Metrics';
 DEF main_table = 'sysman.mgmt$templates';
 BEGIN
   :sql_text := '

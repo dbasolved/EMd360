@@ -1,4 +1,4 @@
-DEF section_name = 'Repository Schemas Info';
+DEF section_name = '3f. Repository Schemas Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -19,7 +19,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Invalid Schema Indexes';
+DEF title = '1. Invalid Schema Indexes';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -41,7 +41,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Unanalyzed Table';
+DEF title = '2. Unanalyzed Table';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -64,7 +64,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Unanalyzed Indexes';
+DEF title = '3. Unanalyzed Indexes';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -92,7 +92,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Stale statistics on Indexes';
+DEF title = '4. Stale statistics on Indexes';
 DEF main_table = 'sys.user_tables';
 BEGIN
  :sql_text := '
@@ -123,7 +123,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Chained Rows';
+DEF title = '5. Chained Rows';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -179,7 +179,7 @@ END;
 @@emd360_9a_pre_one.sql
 */
 
-DEF title = 'Indexes with NOLOGGING';
+DEF title = '6. Indexes with NOLOGGING';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -201,7 +201,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Tables with chained rows';
+DEF title = '7. Tables with chained rows';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -221,7 +221,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Index Size to Large';
+DEF title = '8. Index Size to Large';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -240,7 +240,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Invalid GUID column definitions';
+DEF title = '9. Invalid GUID column definitions';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '
@@ -261,7 +261,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Tables with missing leading TARGET_GUID index';
+DEF title = '10. Tables with missing leading TARGET_GUID index';
 DEF main_table = 'sys.dba_objects';
 BEGIN
  :sql_text := '

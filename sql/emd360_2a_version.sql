@@ -1,9 +1,9 @@
-DEF section_name = 'OMS Version';
+DEF section_name = '2a. Version';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Version';
+DEF title = '1. Version';
 DEF main_table = 'sysman.mgmt_oms_parameters';
 BEGIN
  :sql_text := '

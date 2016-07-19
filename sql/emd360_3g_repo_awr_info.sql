@@ -1,9 +1,9 @@
-DEF section_name = 'Repository AWR Info';
+DEF section_name = '3g. Repository AWR Info';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'AWR Size (SYSAUX)';
+DEF title = '1. AWR Size (SYSAUX)';
 DEF main_table = 'sys.v$sysaux_occupants';
 BEGIN
  :sql_text := '
@@ -15,7 +15,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'AWR Retention';
+DEF title = '2. AWR Retention';
 DEF main_table = 'sys.dba_hist_wr_control';
 BEGIN
  :sql_text := '
@@ -27,7 +27,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'AWR Retention';
+DEF title = '3. AWR Retention';
 DEF main_table = 'sys.dba_hist_snapshot';
 BEGIN
  :sql_text := '

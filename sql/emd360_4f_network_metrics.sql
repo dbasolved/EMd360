@@ -1,4 +1,4 @@
-DEF section_name = 'Network Metrics';
+DEF section_name = '4f. Network Metrics';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
@@ -67,7 +67,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Read Rate';
+DEF title = '1. Network Read Rate';
 DEF abstract = 'Network Read Rate';
 DEF foot = 'Chart represents the amount of network reads on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -139,7 +139,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Write Rate';
+DEF title = '2. Network Write Rate';
 DEF abstract = 'Network Write Rate';
 DEF foot = 'Chart represents the amount of network writes from the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -211,7 +211,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Network Rate';
+DEF title = '3. Total Network Rate';
 DEF abstract = 'Total Network Rate';
 DEF foot = 'Chart represents the total amount of network reads and writes on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -283,7 +283,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Network Error Rate';
+DEF title = '4. Total Network Error Rate';
 DEF abstract = 'Total Network Error Rate';
 DEF foot = 'Chart represents the amount of network errors on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -355,7 +355,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Read Throughput';
+DEF title = '5. Network Read Throughput';
 DEF abstract = 'Network Read Throughput';
 DEF foot = 'Chart represents the amount of network read throughputs on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -427,7 +427,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Input Errors';
+DEF title = '6. Network Input Errors';
 DEF abstract = 'Network Input Errors';
 DEF foot = 'Chart represents the amount of network input errors on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -499,7 +499,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Output Errors';
+DEF title = '7. Network Output Errors';
 DEF abstract = 'Network Output Errors';
 DEF foot = 'Chart represents the amount of network output errors on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -571,7 +571,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Collisions Rate';
+DEF title = '8. Network Collisions Rate';
 DEF abstract = 'Network Collisions Rate';
 DEF foot = 'Chart represents the amount of network collisons on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -643,7 +643,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Total Network Throughput';
+DEF title = '9. Total Network Throughput';
 DEF abstract = 'Total Network Throughput';
 DEF foot = 'Chart represents the total amount of network throughput on the OMS per day';
 @@emd360_9a_pre_one.sql
@@ -715,7 +715,7 @@ END;
 /
 
 DEF skip_lch='';
-DEF title = 'Network Write Throughput';
+DEF title = '10. Network Write Throughput';
 DEF abstract = 'Network Write Throughput';
 DEF foot = 'Chart represents the amount of network write throughputs on the OMS per day';
 @@emd360_9a_pre_one.sql

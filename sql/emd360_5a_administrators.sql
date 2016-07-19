@@ -1,9 +1,9 @@
-DEF section_name = 'Administrators';
+DEF section_name = '5a. Administrators';
 SPO &&emd360_main_report..html APP;
 PRO <h2>&&section_name.</h2>
 SPO OFF;
 
-DEF title = 'Total Administrators';
+DEF title = '1. Total Administrators';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -14,7 +14,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'List of Administrators';
+DEF title = '2. List of Administrators';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -25,7 +25,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Missing EM Admin Accounts';
+DEF title = '3. Missing EM Admin Accounts';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -44,7 +44,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Targets without valid owner';
+DEF title = '4. Targets without valid owner';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -63,7 +63,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Non-Standard EM Admin Accounts';
+DEF title = '5. Non-Standard EM Admin Accounts';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -78,7 +78,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Pending Delete Users';
+DEF title = '6. Pending Delete Users';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -101,7 +101,7 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
-DEF title = 'Blocked EM Admin Accounts';
+DEF title = '7. Blocked EM Admin Accounts';
 DEF main_table = 'sysman.mgmt_created_users';
 BEGIN
   :sql_text := '
@@ -117,3 +117,15 @@ END;
 /
 @@emd360_9a_pre_one.sql
 
+/*
+--DEF title = '8. Privileges Granted';
+--DEF main_table = 'sysman.mgmt_priv_grants';
+--BEGIN
+-- :sql_text := '
+--select grantee, priv_name, apply_grant, DECODE(grantee_is_role, 0, 'NO', 1, 'YES') is_role, DECODE(direct_grant, 0, 'NO', 1, 'YES') direct_grant 
+--from sysman.mgmt_priv_grants
+--';
+--END;
+--/
+--@@emd360_9a_pre_one.sql
+*/
